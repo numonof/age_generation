@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color:#333;
+    line-height: 1.5;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background:url(../img/antique.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+   
+    width: 450px;
+    height: 500px;
+    padding:20px;
+    border-radius:5px;
+    background:rgba(35, 25, 35, 0.6);
+    /* box-shadow:1px -1px 20px #fff; */
+    backdrop-filter:blur(2px);
+    /* background:url(../img/antique.webp);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.form>h2{
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    padding-bottom: 30px ;
+}
+.form{
+    width: 100%;
+    height: 100%;
+
+      
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.form>label{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+color:#fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+.form>input{
+    width: 100%;
+    padding: 12px 22px;
+    border-radius:30px;
+    outline: 1px solid transparent;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color:#fff;
+}
+.form>p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+.form>button{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 12px 36px;
+    margin: 30px auto;
+    background-color: transparent;
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.show-modal{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5 rem;
+    margin: 5ram 2 rem;
+    background-color: #7dd56f;
+    color:#444;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+.close-modal{
+    position:absolute;
+    top:1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+    border: none;
+    background:none; 
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color:#fff;
+}
+.respons{
+    font-size: 20px;
+    color:#fff
+}
+
+
+/*  classes to make modal work */
+.hidden{
+display: none;
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 60%;
+    background:rgba(35, 25, 35, 0.6);
+    padding: 6rem;
+    border-radius:5px;
+    z-index: 10;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+.owerlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+}
